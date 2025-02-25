@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Backgrounds</title>
+	<style>
+		body{
+			font-family: Arial, sans-sreif;
+			margin-bottom: 500px;
+		}
+		#bg-color{
+			background-color: teal;
+		}
+
+		#bg-image{
+			box-shadow: 0 0 10px black;
+			padding: 15px;
+			width: 500px;
+
+			color: yellow;
+			background-image: url("../img/image1.jpg");
+			
+		}
+		#bg-repeat{
+			box-shadow: 0 0 10px black;
+			padding: 15px;
+			width: 500px;
+			height: 300px;
+			/*background-color: lightsalmon;
+			background-image: url("../img/image1.jpg");
+			background-repeat: no-repeat;
+			background-position: top right;
+			background-attachment: scroll;*/
+			background : lightsalmon url("../img/image1.jpg") no-repeat scroll top right;
+		}
+		#bg-attach{
+			box-shadow: 0 0 10px black;
+			padding: 15px;
+			width: 100%;
+			height: 250px;
+			background : lightsalmon url("../img/image2.jpg") no-repeat fixed top right;
+		}
+
+		#bg-size{
+			box-shadow: 0 0 10px black;
+			padding: 15px;
+			width: 500px;
+			height: 350px;
+			background-image: url("../img/image2.jpg");
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+<h2>Backgroung color</h2>
+<div id="bg-color">
+	<h1>I am with teal color background</h1>
+</div>
+
+<h2>Background attachment</h2>
+<div id="bg-attach">
+	
+</div>
+
+<h2>Background Size</h2>
+<div id="bg-size">
+	
+</div>
+
+<h2>Background Image</h2>
+<div id="bg-image">
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+</div>
+
+<h2>Background Repeat</h2>
+<div id="bg-repeat">
+	
+</div>
+
+	
+</div>
+</body>
+</html>

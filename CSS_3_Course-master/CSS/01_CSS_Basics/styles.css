@@ -1,0 +1,9 @@
+body{
+	background-color: orange;
+	font-family: "Comic Sans MS" Sans-seriff;
+	text-align: center; 
+}
+/*Trnsformation styles*/
+.main-content{
+	border: 15px solid saddlebrown;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Borders</title>
+	<style type="text/css">
+		body{
+			font-family: Arial ,sans-serif;
+			margin-bottom: 500px;
+		}
+		div{
+			background-color: lightgreen;
+			text-align: center;
+			padding: 15px;
+			width: 500px;
+			font-size: 20px;
+		}
+
+		#border-all{
+			border :10px limegreen solid;
+		}
+		#border-single{
+			border-left: 10px limegreen solid;
+		}
+		#circle{
+			height: 200px;
+			width: 200px;
+			box-shadow: 0 0 10px black;
+			/*border-radius: 100px;*/
+			border-radius: 50%;
+			background-color: limegreen;
+		}
+
+		#border-circle{
+			height: 200px;
+			width: 200px;
+			box-shadow: 0 0 10px black;
+			/*border-radius: 100px;*/
+			border-radius: 50%;
+			background-color: limegreen;
+			border : 10px solid yellow;
+		}
+
+		#border-frame{
+			height: 200px;
+			width: 200px;
+			box-shadow: 0 0 10px black;
+			border : 20px solid yellow;
+		}
+		#border-ring{
+			height: 200px;
+			width: 200px;
+			box-shadow: 0 0 10px black;
+			/*border-radius: 100px;*/
+			border-radius: 50%;
+			
+			border : 20px solid yellow;
+		}
+		#border-ball{
+			height: 200px;
+			width: 200px;
+			box-shadow: 0 0 10px black;
+			/*border-radius: 100px;*/
+			border-radius: 50%;
+			border-top: 25px solid greenyellow;
+			border-right: 80px solid darkslategray;
+			border-bottom:  25px solid greenyellow;
+			border-left: 80px solid darkslategray;
+			background: linear-gradient(45deg, darkslategray, yellow);
+		}
+		#youtube{
+			height: 300px;
+			width: 300px;
+			box-shadow: 0 0 10px black;
+			/*border-radius: 100px;*/
+			
+			border-top: 25px solid greenyellow;
+			border-right: 30px solid darkslategray;
+			border-bottom:  25px solid greenyellow;
+			border-left: 30px solid darkslategray;
+			
+		}
+	</style>
+</head>
+<body>
+ <h1>Border demo</h1>
+ <div id="border-all">
+ 	<h2>Border all</h2>
+ </div>
+
+ <h1>Border Single Side</h1>
+ <div id="border-single">
+ 	<h2>Border Single Side</h2>
+ </div>
+
+ <h1>Circle</h1>
+ <section id="circle">
+ 	
+ </section>
+
+ <h1>Border Circle</h1>
+ <section id="border-circle">
+ 	
+ </section>
+
+ <h1>Border Frame</h1>
+ <section id="border-frame">
+ 	
+ </section>
+ <h1>Border Ring</h1>
+ <section id="border-ring">
+ 	
+ </section>
+
+ <h1>Border Ball</h1>
+ <section id="border-ball">
+ 	
+ </section>
+
+ <h1>Youtube</h1>
+ <section id="youtube">
+ 	<iframe width="300" height="300" src="https://www.youtube.com/embed/xSXf9h4fIKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </section>
+ 
+</body>
+</html>

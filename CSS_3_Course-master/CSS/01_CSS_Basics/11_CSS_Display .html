@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Display</title>
+	<style>
+		div{
+			margin: 5px;
+		}
+	div h2{
+		background-color: lightsalmon;
+		padding: 5px;
+		margin: 5px;
+		
+		display: inline;
+	  }
+	  span{
+	  	background-color: orange;
+	  	display: block;
+	  	padding: 5px;
+		margin: 5px;
+	  }
+	  div a{
+	  	background-color: blueviolet;
+	  	display: block;
+	  	padding: 5px;
+		margin: 5px;
+		color: white;
+	  }
+	  h1{
+	  	display: none;
+	  }
+	  .parent{
+	  	background-color: lightgray;
+	  	padding: 15px;
+	  	text-align: center;
+	  }
+	  .child{
+	  	background-color: blueviolet;
+	  	color: white;
+	  	padding: 15px;
+	  	width: 180px;
+	  	display: inline-block;
+	  	box-shadow: 0 0 10px black;
+	  	border-radius: 20px;
+	  }
+	</style>
+</head>
+<body>
+<h2>Good Morning</h2>
+<h2>Good Evening</h2>
+<h2>Good Afternoon</h2>
+
+<a href="#">Home</a>
+<a href="#">About Us</a>
+<a href="#">Contact Us</a>
+
+<!-- inline -->
+<div id="make-inline">
+<h2>Good Morning</h2>
+<h2>Good Evening</h2>
+<h2>Good Afternoon</h2>
+</div>
+
+<!-- Block -->
+<div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
+		<span>1. commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+		</span> 
+		<span> 2. penatibus et magnis dis parturient montes, nascetur ridiculus 
+		</span>
+		<span>3. mus. Donec quam felis,</span>
+	</p>
+</div>
+
+<!-- block -->
+<div>
+<a href="#">Home</a>
+<a href="#">About Us</a>
+<a href="#">Contact Us</a>
+</div>
+<!-- None -->
+<div>
+	<h1>Good morning</h1>
+</div>
+<!-- inline-block -->
+<div class="parent">
+	<div class="child">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+	</div>
+	<div class="child">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+	</div>
+	<div class="child">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+	</div>
+	<div class="child">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+	</div>
+
+</div>
+</body>
+</html>

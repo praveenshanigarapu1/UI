@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Jsesu Doors Transformation</title>
+	<link rel="styles.css" type="text/css" href="">
+	<style>
+		.main-content{
+		border: 15px solid saddlebrown;
+		width: 350px;
+		height: 450px;
+		margin: auto;
+		box-shadow: 0 10px 10px black;
+		overflow: hidden;
+		position: relative;
+		
+   }
+
+   .main-content img{
+   	    width: inherit;
+		height: inherit;
+		transition: all 0.5s;
+   }
+   .main-content:hover img{
+   	transform: scale(1.2,1.2);
+   }
+   .main-content div {
+   	position: absolute;
+   	top: 0;
+   	
+   	width: 50%;
+   	height: 100%;
+   	transition: all 0.9s;
+   	
+   }
+   .content-left{
+   	background-image: url("../img/left-door.png");
+   	transform: perspective(400px) rotateY(0deg);
+   	left: 0;
+   	transform-origin: left; 
+   }
+
+   .content-right{
+   	background-image: url("../img/right-door.png");
+   	right: 0;
+   	transform-origin: right; 
+   	transform: perspective(400px) rotateY(0deg);
+   	
+
+   }
+
+   .main-content:hover .content-left{
+   	transform:perspective(400px) rotateY(90deg);
+   }
+
+   .main-content:hover .content-right{
+   	transform:perspective(400px) rotateY(-90deg);
+   }
+   .curtain{
+   	background-color: rgba(0,0,0,0.5);
+   	position: absolute;
+ 	top: 0px;
+   	left: 0px; 	
+   	width: 100%;
+   	height: 100%;
+   	transition: all 0.9s;
+   	transform: translateY(-100%);
+   }
+
+   .main-content:hover .curtain{
+   	transform: translateY(0%);
+   }
+	</style>
+</head>
+<body>
+	<div class="main-content">
+		<!-- loc "E:\PraveenMaterial\UI\Naresh\CSS_3_Course-master\CSS_3_Course-master\CSS\img" -->
+		 <img src="../img/Jesus1.jpg">
+		<div class="content-left">
+			
+		</div>
+		<div class="content-right">
+			
+		</div>
+	</div>
+	<div class="curtain"></div>
+</body>
+</html>

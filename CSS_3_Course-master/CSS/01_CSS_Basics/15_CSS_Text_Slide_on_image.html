@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Text Slide on Image</title>
+	<style>
+		body{
+			background-color: darkslategray;
+		}
+		.container{
+			width: 400px;
+			height: 300px;
+			margin: 80px auto;
+			position: relative;
+			overflow: hidden;
+
+		}
+		 .container img{
+			width: inherit;
+			height: inherit;
+			position: relative;
+			border-radius: 15px;
+			border-radius: 0px 15px 15px 0px;
+			transform: translateX(50%);
+			transition: all 0.5s;
+
+			
+		}
+		 .container .content{
+			position: absolute;
+			top: 0px;
+			left: 0;
+			color: white;
+			background: linear-gradient(45deg,blueviolet, deeppink);
+			width: 50%;
+			height: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			border-radius: 15px 0 0 15px;
+			transform: translateX(0%);
+			transition: all 0.5s;
+		}
+
+		.container:hover img{
+			transform: translateX(0%);
+			border-radius:15px;
+		}
+
+		.container:hover .content{
+			transform: translateX(-100%);
+		}
+
+		.container .content{
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<img src="../img/food.jpg" alt="">
+	<div class="content">
+		<h2>Food You love</h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body{
+            margin-bottom: 5000px;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            box-shadow: 0 0 10px black;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            left: 400px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 10px black;
+            margin: 2px;
+            border: 2px solid orange;
+        }
+        .box1-static{
+            background-color: red;
+            position: relative;
+            
+            top: 80px;
+            left: 500px;
+            z-index: 2;
+        }
+        .box2{
+            background-color: limegreen;
+        }
+        .box3{
+            background-color: yellow;
+        }
+        .box4{
+            background-color: teal;
+            top: 0px;
+            right: 0px;
+            position: fixed;
+        }
+
+        /* position: -webkit-sticky !important; */
+        .box5{
+            background-color: purple;
+            position: sticky !important;
+            top: 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1-static"></div>
+    <div class="container">
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+</body>
+</html>

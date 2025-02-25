@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selectors</title>
+	<style>
+		h1{
+			background-color: red;
+			padding: 10px;
+		}
+		#yellow{
+			background-color: yellow;
+			padding: 10px;
+			color: black;
+		}
+		#orange{
+			background-color: orange;
+			padding: 10px;
+		}
+		.red{
+			background-color: orange;
+			padding: 10px;
+		}
+		
+		.blue{
+			background-color: blue;
+			padding: 10px;
+			color: white;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+
+	<h1>Good Morning</h1>
+	<h1>Good Afternon</h1>
+	<h1>Good evening</h1>
+
+	<!-- Id should be unique -->
+	<h1 id="orange">Good Morning</h1>
+
+	<!-- Class for group of elements(may be diff elements also) -->
+	<h1 class="blue">Good Afternon</h1>
+	<h1 class="blue">Good evening</h1>
+
+	<p class="blue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+
+	<!-- Styles apply how you define, not how you declare -->
+
+	<h1 class="red blue">Good evening(Styles apply how you define)</h1>
+
+	<!-- Id has more priority -->
+
+	<h1 class="blue red" id="yellow">Good evening(Id has priority)</h1>
+
+
+</body>
+</html>

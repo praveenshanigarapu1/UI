@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Slide Image Up On Over</title>
+	<style>
+
+		body{
+			border-bottom: 500px;
+		}
+		.container{
+			
+			width: 250px;
+			height: 450px;
+			margin: 80px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.container img{
+			width: inherit;
+			height: inherit;
+			transition: all 0.5s;
+		}
+		.container .content{
+			position: absolute;
+			bottom: 0px;
+			background: linear-gradient(45deg, blueviolet, deeppink);
+			color: white;
+			padding: 10px;
+			font-size: 18px;
+			transition: all 0.5s;
+			transform: translateY(0%);
+		}
+
+		.container:hover .content{
+			transform: translateY(30%);
+		}
+		.container:hover img{
+			transform: translateY(-30%);
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<img src="../img/camera.jpg" alt="">
+	<div class="content">
+		
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus </p>
+	</div>
+</div>
+</body>
+</html>

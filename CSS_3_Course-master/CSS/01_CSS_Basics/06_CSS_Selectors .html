@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selectors</title>
+	<style>
+		ul, ol{
+			list-style: none;
+
+		}
+		li{
+			padding: 10px;
+			margin: 2px;
+
+		}
+		ul li:first-child{
+			background-color: orange;
+		}
+
+		ul li:nth-child(2){
+			background-color: red;
+		}
+
+		ul li:last-child{
+			background-color: orange;
+		}
+
+		ol li:nth-child(even){
+			background-color: black;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+<div>
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Bootstrap</li>
+		<li>Javascript</li>
+		<li>JQuery</li>
+		<li>Ajax</li>
+		<li>Angular</li>
+	</ul>
+</div>
+<h2>Order List</h2>
+  <ol>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Bootstrap</li>
+		<li>Javascript</li>
+		<li>JQuery</li>
+		<li>Ajax</li>
+		<li>Angular</li>
+	</ol>
+
+
+</body>
+</html>
