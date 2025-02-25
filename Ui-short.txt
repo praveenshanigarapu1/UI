@@ -1,0 +1,64 @@
+
+for in
+for of
+forEach()
+
+Object.key()
+Object.values()
+Object.hasOwnProperty()
+
+Remove Duplicates from Array
+
+Local Variables
+Global Variables
+Block scope variable
+Lexical scope
+
+Function
+Nested Function
+Callback function
+Arrow Function 
+IIFE(Immediate Invoking Function Expression)
+
+event
+click , mouseover, mouseout
+
+this
+----
+pass as arg
+Change properties
+
+id
+--
+id.src=this.src
+
+Hoisting
+Note : Arrow functions can not be hoist
+obj={}
+Object.create({})
+var obj=new Object({})
+
+Object Destructor
+=================
+var obj={uname:"scott",city:"hyd"}
+var {city,uname}=obj;
+
+Array Destructor
+================
+var arr=[10,20,30,40,50];
+var[x,y,z,a,b]=arr;
+
+BOM(Browser Object Modal)
+=========================
+window,
+window.alert("Hi scott");
+var rv=window.prompt("Enter name");
+var rv=confirm("You want to close?")
+window.print();
+window.open()
+
+document
+
+navigator
+
+setTimeout()

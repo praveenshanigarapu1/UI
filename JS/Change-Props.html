@@ -1,0 +1,20 @@
+<body>
+    <input type="button" value="Click" onclick="alert('Scott')">
+    <img src="orange.jpg" alt="" width="100px" height="100px" 
+    onclick="this.src='all.jpg'"
+    onmousemove="this.src='pineapple.jpg'"
+    onmouseout="this.src='orange.jpg'"
+    >
+
+    <input type="button" value="Click Me" 
+    onmouseover="this.value='Dont click Me';this.type='text'"
+    onmouseout="this.value='Please Click me'"
+    ><br/>
+    <input type="button" value="Change" onclick="fun(this)">
+</body>
+<script>
+    function fun(t){
+        t.value='Login'
+        t.type='text'
+    }
+</script>
