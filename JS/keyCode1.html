@@ -1,0 +1,18 @@
+<script>
+function fun1(e){
+    console.log(e.keyCode)
+    document.getElementById('div1').innerText=''
+    if(e.keyCode<48 || e.keyCode>57){
+        
+        //alert("Enter Numbers only")
+        document.getElementById('div1').innerText='Enter number'
+        e.preventDefault();
+        
+      }
+   
+}
+</script>
+<body>
+    <input type="text" onkeypress="fun1(event)">
+    <div id="div1"></div>
+</body>
