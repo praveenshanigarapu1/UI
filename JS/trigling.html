@@ -1,0 +1,24 @@
+
+    <body>
+        <div id="div1">
+            this is div1
+            <div id="div2">
+                this is div2
+            </div>
+        </div>
+    </body>
+    <style>
+        div{
+            padding: 10px;
+            border: 1px solid silver;
+        }
+    
+    </style>
+    <script>
+        document.getElementById('div1').addEventListener('click',function(){
+            alert('div1 clicked')
+        },true)
+        document.getElementById('div2').addEventListener('click',function(){
+            alert('div2 clicked')
+        },true)
+    </script>
