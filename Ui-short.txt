@@ -62,3 +62,15 @@ document
 navigator
 
 setTimeout()
+
+
+React
+=====
+import ReactDOM from 'react-dom/client'
+react-dom to create dom object with components
+
+application related components we can create in App.js like utils
+
+exporting from app to index.js
+if only one function is available
+
