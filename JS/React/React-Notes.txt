@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+we can render components with root.render(<App/>) in index.js file
+
+in single js file we can create n components but only one default component, default has to be there
+for default components at the time of import we can give any reference name.
+import App from './App'; 
+or
+import Appref from './App';
+
+any one default export is fine
+
+1.export default function App() {}
+2.export default App;
+
+Remaining are non default components
+Reference name should be same, import { C2, C3 } from './App';
+should be in {C2, C3}
+import Appref, {C2, C3 } from './App';
+or
+import {C2, C3} from './App';
+*** if we don't use {C2} it calls default component twice.
+
+component latter should start with UpperCase
+
+from "./fileName"
+components are defined in js file so no need define file extensions
+
+in function  return (only one root shoulbe there 
+<div>
+here we can define any num of div tags
+</div>) 
+
+not allowed 
+function  return (only one root shoulbe there <div></div> <div></div>)

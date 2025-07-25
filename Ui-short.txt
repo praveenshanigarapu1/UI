@@ -73,4 +73,5 @@ application related components we can create in App.js like utils
 
 exporting from app to index.js
 if only one function is available
+this.var class variable
 
