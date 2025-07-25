@@ -1,0 +1,20 @@
+<script>
+class cls1{
+    fun1(){
+    alert("Fun1 from class1");
+    }
+}
+
+class cls2 extends cls1{
+    fun1(){
+    alert("Fun1 from class2");
+    }
+    fun2(){
+    alert("Fun2 from class2");
+    this.fun1();
+    super.fun1();
+    }
+}
+var obj=new cls2();
+obj.fun2();
+</script>

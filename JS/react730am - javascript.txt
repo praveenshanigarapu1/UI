@@ -1487,7 +1487,7 @@ class cls2 extends cls1{}
 class cls3 extends cls1{}
 </script>
 
-Hybrid Inheritance : It is collection of single, multiple, multi level and hierarchical inheritances. JavaScript does nit support this concept.
+Hybrid Inheritance : It is collection of single, multiple, multi level and hierarchical inheritances. JavaScript does not support this concept.
 
 ------------------------------------
 super : using this keyword we can access the members of parent class from the derived class.

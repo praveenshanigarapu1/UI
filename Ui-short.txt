@@ -73,5 +73,21 @@ application related components we can create in App.js like utils
 
 exporting from app to index.js
 if only one function is available
-this.var class variable
+this.var class variable innvocation
+
+1) Single Inheritance
+2) Multiple Inheritance
+3) Multi level Inheritance
+<script>
+class cls1{}
+class cls2 extends cls1{}
+class cls3 extends cls2{}
+</script>
+4) Hybrid Inheritance
+5) Hierarchical Inheritance.
+
+var obj=new cls2()
+we can call super class methods with iniherited class object.
+
+
 
