@@ -20,6 +20,7 @@ Callback function
 Arrow Function 
 IIFE(Immediate Invoking Function Expression)
 
+
 event
 click , mouseover, mouseout
 
@@ -63,6 +64,13 @@ navigator
 
 setTimeout()
 
+Oops
+----
+class data type
+constructor creation is with constructor key word
+
+alert(obj.sno)
+alert(this.sno) in class function
 
 React
 =====
@@ -85,6 +93,11 @@ class cls3 extends cls2{}
 </script>
 4) Hybrid Inheritance
 5) Hierarchical Inheritance.
+<script>
+class cls1{}
+class cls2 extends cls1{}
+class cls3 extends cls1{}
+</script>
 
 var obj=new cls2()
 we can call super class methods with iniherited class object.
