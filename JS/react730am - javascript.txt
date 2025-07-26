@@ -1389,11 +1389,12 @@ object : Object is instance of class. class members we can access using object. 
 
 constructor() : constructor is a type of method contains class name as method name. By default every class contains a pre defined constructor to create class object. we can also create user defined constructor to execute some statements at the 
 time of creating class object. using constructor keyword we can create user defined constructor.
-
+var can be declared outside function or inside function but not in class
+class data type is used to create variable
 <script>
 	class cls1{
 		 sno=100;
-		fun1(){
+		fun1(){ //in class no function key word
 			alert("From class method");
 		 }
 	}
@@ -1410,7 +1411,7 @@ time of creating class object. using constructor keyword we can create user defi
 		fun1(){
 			alert("From class method");
 		 }
-		 constructor(){
+		 constructor(){ //constructor creation
 			console.log("Cons exec....")
 		 }
 	}
@@ -1440,6 +1441,8 @@ this : using this keyword we can access the members of class from the methods of
 
 Inheritance : It is a concept of inheriting the members of a class from another class. using extends keyword we can inherit the members of a class from another class.
 
+React supports clsses to create  components
+functional components are faster than class components. rcc is short cut to create a class component  and also create-react-class is package to create classcomponents
 We have different types of inheritances
 
 1) Single Inheritance

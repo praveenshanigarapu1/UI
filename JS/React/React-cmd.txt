@@ -1,3 +1,5 @@
+
+create-react-app class-camponets-app
 npm install expressjs
 npm i bootstrap
 code .
@@ -10,69 +12,3 @@ http://localhost:3000/
 
 ==========================================================================
 
-<div id="root"></div>
-root has to be there in index.html
-
-WARNING in [eslint]
-src\App.js
-  Line 1:8:  'logo' is defined but never used  no-unused-vars 
-  
-B-error
-ERROR
-Target container is not a DOM element.
-    at exports.createRoot (http://localhost:3000/static/js/bundle.js:20698:45)
-    at ./src/index.js (http://localhost:3000/static/js/bundle.js:26695:60)
-    at options.factory (http://localhost:3000/static/js/bundle.js:27460:31)
-    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:26890:32)
-    at http://localhost:3000/static/js/bundle.js:28103:37
-    at http://localhost:3000/static/js/bundle.js:28105:12
-	
-	fix :
-	add 
-	<div id="root"></div>
-
-issue2
------	
-
-"message": "JSX expressions must have one parent element.",
-	
-B-error
-ERROR in ./src/index.js
-Module build failed (from ./node_modules/babel-loader/lib/index.js):
-SyntaxError: D:\React-practice\first-app\src\index.js: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (12:4)
-
-root.render(
-  
-    <App />
-    <C2/>
-    <C3/>
-);
-
-fix:
-
-root.render(
-  <React.StrictMode>
-     <App />
-    <C2/>
-    <C3/>
-  </React.StrictMode>
-   
-);
-
-issue 3
--------
-ERROR in ./src/index.js 13:34-37
-export 'default' (imported as 'App') was not found in './App' (possible exports: C2, C3)
-
-B-error
--------
-ERROR in ./src/index.js 13:34-37
-export 'default' (imported as 'App') was not found in './App'
-
-fix: export default App;
-
-issue4
-------
-SyntaxError: D:\React-practice\first-app\src\index.js: Unexpected token, expected "from" (4:10)
- import App-ref from './App';
- fix:  import Appref from './App';
